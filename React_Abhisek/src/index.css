@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.lorem {
+  background-color: blue;
+  margin: 20px;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #32075a;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.nav_bar .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_bar .right .items {
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_bar .right .items:hover {
+  background-color: black;
+}
