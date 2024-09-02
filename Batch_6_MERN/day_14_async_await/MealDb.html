@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealDb API</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 10px;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<div class="container">
+
+</div>
+
+<body>
+
+    <script>
+        let area = "Indian"
+        let fetch_data_api = async () => {
+            let api = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`);
+            let data = await api.json();
+
+            console.log(data.meals)
+            let container = document.querySelector('.container')
+
+            container.innerHTML = data.meals.map((d) => `<div>
+            <img src=${d.strMealThumb} />
+            <h3> ${d.strMeal}</h3>
+            </div>`).join("")
+        }
+
+        fetch_data_api();
+
+    </script>
+
+</body>
+
+</html>

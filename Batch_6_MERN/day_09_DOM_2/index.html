@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            /* background-color: black;
+            color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello Console</h1>
+
+    <button id="dark">Dark</button>
+    <button id="light">Light</button>
+
+    <script>
+
+        document.querySelector('#dark').addEventListener('click', () => {
+            const body = document.querySelector('body');
+            body.style.backgroundColor = 'blue';
+            body.style.color = 'white'
+        })
+
+        document.querySelector('#light').addEventListener('click', () => {
+            const body = document.querySelector('body');
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black'
+        })
+
+
+
+    </script>
+</body>
+
+</html>

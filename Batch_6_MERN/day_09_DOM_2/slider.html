@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+
+        }
+
+        img {
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <div>
+        <img src="" alt="" id="img">
+
+    </div>
+    <div style="display: flex;">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
+
+
+    <script>
+        const imgArr = [
+            "https://cdn.pixabay.com/photo/2022/09/16/15/53/city-7458934_640.jpg",
+            "https://pixabay.com/photos/twilight-bridge-fortress-river-8171206/",
+            "https://cdn.pixabay.com/photo/2022/09/16/17/07/city-7459162_640.jpg",
+            "https://cdn.pixabay.com/photo/2021/12/15/04/21/skyscraper-6871750_640.jpg",
+            "https://cdn.pixabay.com/photo/2023/01/15/22/48/lake-7721285_640.jpg"
+        ]
+
+        let img = document.querySelector('#img')
+        let index = 0;
+        img.src = imgArr[index];
+
+        document.querySelector('h1').innerText = index
+
+
+        //next
+        document.querySelector('#next').addEventListener('click', () => {
+            if (index <4) {
+                index += 1;
+            } else {
+                index = 0
+            }
+            img.src = imgArr[index]
+            document.querySelector('h1').innerText = index
+
+        })
+
+        // prev
+        document.querySelector('#prev').addEventListener('click', () => {
+            if (index == 0) {
+                index = 4;
+            } else {
+                index -= 1
+            }
+            img.src = imgArr[index]
+            document.querySelector('h1').innerText = index
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

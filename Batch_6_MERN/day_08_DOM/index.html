@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Intro</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="b">
+    <div>
+        <p>Lorem ipsum dolor
+            <span>
+                sit amet
+            </span>
+            consectetur adipisicing elit.
+        </p>
+        <h1>Learning DOM</h1>
+        <p>This is para</p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+
+    <div class="test">This testing div</div>
+    <div id="test2">This is testing div 2</div>
+
+    <script>
+        console.log(document.querySelector('.test').innerHTML)
+        console.log(document.querySelector('#test2').innerHTML)
+        // const body = document.getElementsByTagName('body')
+        // const body = document.getElementsByTagName('h1')
+
+        // const div = document.getElementsByTagName('div')
+
+        const div = document.querySelectorAll('div')
+
+        console.log(div)
+
+
+        console.log(div[0].children[0].innerHTML)
+        console.log(div[0].children[0].innerText)
+
+        div[0].children[0].innerText = "<h1>Arijit Singh</h1>"
+        div[0].children[0].innerHTML = "<h1>Arijit Singh</h1>"
+
+    </script>
+</body>
+
+</html>
