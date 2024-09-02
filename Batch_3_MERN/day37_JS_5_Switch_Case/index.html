@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let n1 = parseInt(prompt("Enter the first number"));
+      let n2 = parseInt(prompt("Enter the second number"));
+      let n3 = parseInt(
+        prompt(
+          "For addition enter 1, Substraction 2, Division 3, multplication 4"
+        )
+      );
+      switch (n3) {
+        case 1:
+          console.log(`"SUM" of ${n1} and ${n2} = ${n1 + n2}`);
+          break;
+        case 2:
+          console.log(`"Subtract" of ${n1} and ${n2} = ${n1 - n2}`);
+          break;
+        case 3:
+          console.log(`"Divide" of ${n1} and ${n2} = ${n1 / n2}`);
+          break;
+        case 4:
+          console.log(`"Multiplication" of ${n1} and ${n2} = ${n1 * n2}`);
+          break;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.sidebar {
+  height: 100vh;
+  /* background-color: rgb(75, 36, 62); */
+  width: 20%;
+}
+
+.sidebar .items {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.fa-solid {
+  margin-right: 10px;
+  /* padding-right: 10px; */
+  /* background-color: yellow; */
+}
+
+.insta_story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: blue; */
+  margin: 10px;
+}
+
+.insta_story .items img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  border: 2px solid yellow;
+  /* margin: 20px 30px 20px; */
+}
+
+.insta_story .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.instagram {
+  display: flex;
+  /* align-items: center; */
+}
+
+.post_section{
+  width: 55%;
+  /* background-color: rgb(63, 59, 186); */
+}
+
+.post_section .post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person_detail .img{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.person_detail .img img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  border: 1px solid yellow;
+}
+
+.person_detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.switch{
+  color: blue;
+}
+
+.rightbar{
+  width: 25%;
+  /* background-color: brown; */
+}

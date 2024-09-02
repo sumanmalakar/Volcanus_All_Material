@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    color: white;
+    height: 200vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.nav_bar .items{
+    padding: 20px;
+}
+
+
+.facebook_story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.story {
+    position: relative;
+    /* background-color: yellow; */
+    width: 200px;
+    height: 270px;
+    margin: 10px ;
+}
+
+.story #main_img {
+    width: 200px;
+    height: 270px;
+    border-radius: 10px;
+    border: 2px solid rgb(18, 172, 189);
+}
+
+.user_img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.user_img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    border: 2px solid yellow;
+}
+
+.text{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: fixed;
+    /* top: 10px;
+    right: 10px; */
+
+    bottom: 10px;
+    right: 10px;
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: sticky;
+    top: 280px;
+}

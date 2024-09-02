@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Modal Last</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="previous_bhai">prev</div>
+    <div class="parent">
+        <div class="child1">child 1 Superman
+            <span>Ram</span>
+        </div>
+        <div class="child2">child 2</div>
+        <div class="child3">child 3</div>
+        <div class="child4">child 4 last wala</div>
+    </div>
+    <div class="next_wala_bhai">next</div>
+<input type="text">
+<input type="text">
+<h1 id="k"></h1>
+<button>add</button>
+    <script>
+    const element = document.querySelector('.parent')
+    // console.log(element)
+
+    // console.log(element.firstElementChild.innerText)
+    // console.log(element.lastElementChild.innerText)
+    // console.log(element.previousElementSibling)
+    // console.log(element.nextElementSibling)
+  
+   const btn = document.createElement('button')
+   btn.innerText = "Submit"
+
+//    document.body.insertBefore(btn, element)
+
+const prev = document.querySelector('.previous_bhai')
+
+
+
+document.querySelector('body').replaceChild(btn,prev)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

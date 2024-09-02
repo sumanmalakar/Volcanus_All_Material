@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #mealdata {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 700px;
+            margin: auto;
+            margin-top: 2rem;
+        }
+        .img {
+            border: 1px solid yellow;
+            border-radius: 10px;
+        }
+        .btn {
+            background-color: blueviolet;
+            color: aqua;
+            border: none;
+            border: 1px solid yellow;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h3>Fetching Data from MealDB API</h3> -->
+    <button class="btn">Indian</button>
+    <button class="btn">American</button>
+    <button class="btn">Canadian</button>
+    <button class="btn">Thai</button>
+
+    <div id="mealdata"></div>
+
+    <script src="Fetch_Data_MealDB_API.js"></script>
+</body>
+
+</html>

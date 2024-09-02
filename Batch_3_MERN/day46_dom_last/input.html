@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    number1 :- <input type="text" id="i1" onchange="getInputValue()">
+    <br>
+    <br>
+    number2 :- <input type="text" id="i2" onchange="getInputValue()">
+    <br>
+    <br>
+
+    <h1></h1>
+
+    <input type="submit" value="Add" id="add">
+    <input type="submit" value="Subtract" id="sub">
+    <input type="submit" value="Multiply" id="mul">
+    <input type="submit" value="Devide" id="div">
+
+    <script>
+        let input1;
+        let input2;
+        const getInputValue = () => {
+            input1 = parseInt(document.querySelector('#i1').value)
+            input2 = parseInt(document.querySelector('#i2').value)
+        }
+
+        document.querySelector('#add').addEventListener('click', () => {
+            document.querySelector('h1').innerText = input1 + input2
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.box1 {
+    background-color: blue;
+    height: 100px;
+    /* width: 400px; */
+}
+
+h1 {
+    background-color: yellow;
+    margin: 0;
+    /* padding: 0; */
+}
+
+.box2 {
+    background-color: rgb(12, 162, 160);
+    height: 100px;
+    /* width: 400px; */
+    /* position: relative;
+    top: 30px; */
+}
+
+.box3 {
+    background-color: rgb(255, 89, 0);
+    height: 100px;
+    /* width: 400px; */
+}
+
+.inside_box {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(5, 5, 12);
+    position: absolute;
+    top: 10px;
+}
+.img{
+    position: relative;
+    background-color: yellow;
+    width: 500px;
+}
+.img img{
+    width: 500px;
+}
+
+.inside_img{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+.inside_img img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid yellow;
+    border-radius: 100px;
+}

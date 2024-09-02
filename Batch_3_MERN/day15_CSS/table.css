@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+table {
+    background-color: rgb(46, 46, 87);
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    border-spacing: 20px;
+    margin-top: 3.5rem;
+    border: 2px solid aqua;
+}
+
+th {
+    background-color: yellowgreen;
+    font-size: 1.4rem;
+    border: 2px solid yellow;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    background-color: rgb(177, 30, 30);
+    font-size: 1.2rem;
+    border: 2px solid yellow;
+    padding: 10px;
+}
+
+th:hover,
+td:hover {
+    background-color: blueviolet;
+    border-color:aqua;
+    border-radius: 100px;
+}

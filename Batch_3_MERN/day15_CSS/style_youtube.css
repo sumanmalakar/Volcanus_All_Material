@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.youtube_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box_content .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    height: 210px;
+    width: 310px;
+}
+.box_content .img img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.box_content .text{
+    font-size: 0.8rem;
+    text-align: center;
+}

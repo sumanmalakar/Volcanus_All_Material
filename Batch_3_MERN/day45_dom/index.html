@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="element">
+        <h1>This my text</h1>
+    </div> -->
+    <button id="dark">Dark</button>
+    <button id="light">Light</button>
+
+
+    <script>
+
+        const btnDark = document.querySelector('#dark')
+        const btnLight = document.querySelector('#light')
+
+        const changeDark = () => {
+            const body = document.querySelector('body')
+            body.style.backgroundColor = 'black'
+        }
+
+        const changeLight = () => {
+            const body = document.querySelector('body')
+            body.style.backgroundColor = 'white'
+        }
+
+        btnDark.addEventListener('click', changeDark)
+        btnLight.addEventListener('click', changeLight)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    /* height: 10vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.box {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    animation-name: superman;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes superman {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: rgb(223, 202, 202);
+        border-radius: 100%;
+        border: 2px solid rgb(13, 15, 46);
+    }
+
+    25% {
+        left: 400px;
+        top: 0px;
+        background-color: brown;
+        border-radius: 100%;
+        border: 2px solid yellow;
+    }
+
+    50% {
+        left: 400px;
+        top: 400px;
+        background-color: rgb(68, 212, 238);
+        border-radius: 100%;
+        border: 2px solid rgb(21, 21, 13);
+    }
+
+    75% {
+        left: 0px;
+        top: 400px;
+        background-color: rgb(73, 228, 17);
+        border-radius: 100%;
+        border: 2px solid rgb(14, 73, 72);
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: rgb(52, 1, 37);
+        border-radius: 100%;
+        border: 2px solid rgb(249, 249, 52);
+    }
+}
+
+.cards {
+    width: 18rem;
+    height: 450px;
+    border: 2px solid yellow;
+    padding: 20px;
+    background-color: rgb(36, 17, 17);
+    border-radius: 10px;
+}
+
+.cards .img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.cards .img img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+
+}
+
+.cards .card_body {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cards .card_body button {
+    padding: 15px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+}
+@media only screen and (max-width: 900px) {
+    body {
+        background-color: yellow;
+    }
+        .container{
+            flex-direction: column;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+        .container {
+            flex-direction: column;
+        }
+}
