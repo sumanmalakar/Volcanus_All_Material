@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const fetchImage = async () => {
+  try {
+    const response = await fetch(`
+      https://api.pexels.com/v1/search?query=nature&per_page=80`,
+      {
+        headers: {
+          Authorization: "32RbjC9489RT7tkziFOgH7wbZStsOVRHrO5zPRQJIDuhrndl03Opu1DE",
+        },
+      }
+    );
+    // console.log(response)
+    const data = await response.json()
+    console.log(data)
+  } catch (error) {
+    console.error('Error fetching images:', error);
+  }
+};
+fetchImage();
+    </script>
+</body>
+</html>

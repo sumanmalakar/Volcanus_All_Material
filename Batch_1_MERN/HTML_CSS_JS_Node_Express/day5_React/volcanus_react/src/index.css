@@ -1,0 +1,13 @@
+.img_style{
+     width:50%;
+     object-fit: contain;
+        
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p{
+    max-width: 200px;
+}

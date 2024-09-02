@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This is my heading tag</h1>
+      <h1 class="h1">
+        This is my another heading tag that is display over here
+      </h1>
+    </div>
+
+    <h1 id="dynamic"></h1>
+
+    <img
+      id="img"
+      src="https://cdn.pixabay.com/photo/2023/11/20/23/06/woman-8402052_640.jpg"
+      alt=""
+    />
+
+    <!-- <button onclick="change()">change</button> -->
+    <button onmouseover="change()" onmouseleave="unChange()">change</button>
+    <button onmouseleave="unChange()">Unchange</button>
+    <input type="text" id="in" onchange="text()" />
+    <h1 id="inputText">v</h1>
+    <button onclick="upperCase()">Uppercase</button>
+
+    <button id="add">Add</button>
+    <button id="remove">remove</button>
+    <div class="con">
+      <p>Hello</p>
+    </div>
+
+    https://www.youtube.com/watch?v=efrW5-IYoCU
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/f0VNrNworK0"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  allowfullscreen
+></iframe>
+
+    <script>
+      // const element = document.createElement('h1')
+      // console.log(element)
+      // const node = document.createTextNode("This is my texit")
+      // console.log(node)
+      // element.appendChild(node)
+      // console.log(element.innerText)
+
+      // document.querySelector('.con').appendChild(element)
+
+      const element = document.createElement("h1");
+
+      element.setAttribute("id", "superman");
+      element.setAttribute("class", "spiderman");
+
+      const node = document.createTextNode("This is my node");
+
+      element.appendChild(node);
+
+      console.log(element.innerHTML);
+
+      // const con = document.querySelector(".con");
+
+      // con.appendChild(element);
+
+      // console.log(element.parentElement)
+
+      // const parent = element.parentNode
+
+      // parent.removeChild(element)
+
+      // console.log(element.parentNode)
+
+      const conta = document.querySelector(".con");
+
+      console.log(conta.children);
+
+      document.querySelector("#remove").addEventListener("click", () => {
+        const conta = document.querySelector(".con");
+
+        const element = conta.children[1];
+
+        // console.log(conta.children[1])
+
+        console.log(element.parentElement);
+
+        const parent = element.parentNode;
+
+        parent.removeChild(element);
+
+        console.log(element.parentNode);
+      });
+
+      document.querySelector("#add").addEventListener("click", () => {
+        const element = document.createElement("h1");
+
+        element.setAttribute("id", "superman");
+        element.setAttribute("class", "spiderman");
+
+        const node = document.createTextNode("This is my node");
+
+        element.appendChild(node);
+
+        console.log(element.innerHTML);
+
+        document.querySelector(".con").appendChild(element);
+
+        const conta = document.querySelector(".con");
+
+        console.log("suman", conta.children[1]);
+      });
+
+      //   const element = document.getElementsByClassName("container")
+      //   console.log(element)
+
+      //   const test = element[0].getElementsByTagName('h1')
+
+      //   console.log("test",test[0])
+
+      // const el2 = document.getElementById("dynamic")
+
+      // // el2.innerHTML = "<h1>fgfgf</h1>"
+      // el2.innerHTML = test[1].innerHTML
+      // // el2.innerText = "<h1>fgfgf</h1>"
+
+      // console.log(document.querySelector('h1.h1').innerHTML)
+
+      const image = document.getElementById("img");
+
+      // image.src = "https://cdn.pixabay.com/photo/2023/12/23/22/15/teen-photo-8466399_640.jpg"
+
+      const btn = document.getElementsByTagName("button");
+
+      btn.addEv;
+
+      const change = () => {
+        const element = document.querySelector("#img");
+
+        element.src =
+          "https://cdn.pixabay.com/photo/2023/12/23/22/15/teen-photo-8466399_640.jpg";
+      };
+      const unChange = () => {
+        const element = document.querySelector("#img");
+
+        element.src =
+          "https://cdn.pixabay.com/photo/2023/11/20/23/06/woman-8402052_640.jpg";
+      };
+      let input;
+      let h;
+      const text = () => {
+        input = document.querySelector("#in");
+        console.log(input.value);
+
+        const h1 = document.querySelector("#inputText");
+        h1.innerHTML = input.value;
+
+        h = input.value;
+      };
+
+      const upperCase = () => {
+        document.querySelector("#inputText").innerHTML = h.toUpperCase();
+      };
+    </script>
+  </body>
+</html>

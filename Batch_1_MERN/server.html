@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <script>
+
+      // Simulate fetching data from a server
+      function fetchData(callback) {
+        setTimeout(function () {
+          const data = { message: "Data fetched successfully" };
+          callback(data); // Call the callback function with the fetched data
+        }, 2000); // Simulating a 2-second delay
+      }
+
+      // Simulate processing data
+      function processData(data, callback) {
+        setTimeout(function () {
+          const processedData = data.message.toUpperCase();
+          callback(processedData); // Call the callback function with the processed data
+        }, 2000); // Simulating a 2-second delay
+      }
+
+      // Simulate displaying processed data
+      function displayProcessedData(processedData, callback) {
+        setTimeout(function () {
+          console.log("Processed data:", processedData);
+          callback(); // Call the callback function
+        }, 2000); // Simulating a 2-second delay
+      }
+
+      // Nested callbacks
+      fetchData(function (data) {
+        processData(data, function (processedData) {
+          displayProcessedData(processedData, function () {
+            console.log("All operations completed.");
+          });
+        });
+      });
+    </script> -->
+    <!-- 
+    <script>
+        const fetchData = (callback)=>{
+             console.log("This is fetch Data funtion ")
+             setTimeout(() => {
+                const data = "We are in inside fetch function callback"
+                callback(data)
+             }, 2000);
+        }
+
+        const processData = (data) =>{
+            setTimeout(()=>{
+                const processed = data.toUpperCase();
+                
+            })
+        }
+
+        fetchData((data)=>{
+            processData(data)
+        })
+
+        
+    </script> -->
+
+    <!-- <script>
+        const p = new Promise((resolve,reject)=>{
+            let number = 30
+
+            if(number === 30){
+                resolve({number,msg:'This another promise'})
+            }else{
+                reject('This is not a number')
+            }
+        })
+
+        p.then((data)=>{
+            let sum = data.number +20
+            return {sum,message:'tete'}
+           
+        })
+        .then((m)=>console.log("This number is coming from another function",m.sum,m.message)).catch((err)=>console.log(err))
+
+        const f = new Promise((resolve,reject)=>{
+            
+        })
+    </script> -->
+
+    <script>
+      const p = new Promise((resolve, reject) => {
+        fetch("https://jsonplaceholder.typicode.com/posts/1") // Fetch some data from an API
+          .then(res=>res.json())
+          .then((data) => {
+            resolve({ data: data, message: "Data fetched successfully" }); // Resolve with an object containing data and message
+          })
+          .catch((error) => {
+            reject(error); // Reject the Promise if there's an error
+          });
+      });
+
+      p.then((result) => {
+        console.log(result.message); // Log the message
+        console.log(result.data); // Log the fetched data
+      }).catch((err) => {
+        console.error("Error occurred:", err);
+      });
+    </script>
+  </body>
+</html>

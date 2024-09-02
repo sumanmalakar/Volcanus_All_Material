@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="suman"></div>
+    <script>
+      // console.log("hello")
+
+      //   new Promise((resolve, reject) => {
+      //     let number = 20;
+      //     console.log("This is my num ",number)
+      //     if (number >= 10) {
+      //       resolve(number);
+      //     } else {
+      //       reject(number - 10);
+      //     }
+      //   })
+      //     .then((msg) => console.log("This is my number = ", msg))
+      //     .catch((err) => console.log("This is my error ", err));
+
+      // new Promise((resolve,reject)=>{
+      //     const data = fetch('https://jsonplaceholder.typicode.com/users')
+      //     console.log(data)
+      //     if(data){
+      //         resolve(data.json())
+      //     }
+
+      // }).then((data)=>console.log("data",data))
+
+      let d;
+      const fetchd = async () => {
+        const api = await fetch("https://jsonplaceholder.typicode.com/users");
+        console.log(api);
+        const data = await api.json();
+        d = data;
+           console.log(data)
+        // return data;
+        // console.log(d)
+        document.querySelector('#suman').innerHTML = data.map((d)=>`<div>
+            ${d.name}
+            ${d.id}
+            ${d.username}
+            </div>`)
+        
+      };
+      console.log(fetchd());
+
+      console.log("dfdf",d);
+    </script>
+  </body>
+</html>
