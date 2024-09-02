@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .box {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background-color: orange;
+        border-width: 50px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 100%;
+        animation-name: superman;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        /* animation-direction: reverse; */
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes superman {
+        /* from{
+                background-color: orange;
+            }
+            to{
+                background-color: blue;
+                height: 200px;
+                width: 200px;
+                
+            } */
+        0% {
+          background-color: aqua;
+          left: 0px;
+          top: 0px;
+        }
+
+        25% {
+          background-color: blueviolet;
+          left: 400px;
+          top: 0px;
+          border-color: rgb(52, 144, 21);
+        }
+
+        50% {
+          background-color: rgb(169, 239, 6);
+          top: 400px;
+          left: 400px;
+          border-color: rgb(76, 14, 232);
+        }
+
+        75% {
+          background-color: white;
+          left: 0px;
+          top: 400px;
+          border-color: rgb(225, 255, 2);
+        }
+
+        100% {
+          background-color: magenta;
+          left: 0px;
+          top: 0px;
+          border-color: rgb(12, 170, 170);
+        }
+      }
+
+      .box1 {
+        border: 10px solid yellow;
+        height: 100px;
+        width: 500px;
+      }
+
+      .box2 {
+          box-sizing: border-box;
+        border: 10px solid yellow;
+        height: 100px;
+        width: 600px;
+        padding: 80px;
+      }
+     /* .box2 p{
+        padding: 20px;
+      } */
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <!-- <div class="box1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+        necessitatibus.
+      </p>
+    </div>
+    <br />
+    <br />
+    <div class="box2">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+        exercitationem delectus sed optio aperiam error doloremque, magni nemo.
+        A, saepe.
+      </p>
+    </div> -->
+  </body>
+</html>

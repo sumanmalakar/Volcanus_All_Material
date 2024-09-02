@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <div class="container">
+      <h1 class="items">
+        Superman <span style="display: none"> from </span>Dc
+      </h1>
+      <h1 class="items">Spiderman from Dc</h1>
+      <h1 class="items">Batman from Dc</h1>
+      <h1 class="items">Iroman from Dc</h1>
+    </div>
+
+
+    <button onclick="changeStyle()">Change Style</button>
+    <button id="btn">Change Style</button>
+
+    <br>
+    <br>
+    <br>
+    
+    <label>This is my Input</label>
+    <input type="text" id="input" class="inputClass text-center"
+    onchange="getInputValue()"
+    >
+
+    <script src="index.js"></script>
+  </body>
+</html>

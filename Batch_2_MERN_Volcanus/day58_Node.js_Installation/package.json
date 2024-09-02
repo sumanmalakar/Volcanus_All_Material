@@ -1,0 +1,13 @@
+{
+  "name": "day58_node.js_installation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Suman Malakar",
+  "license": "ISC"
+}

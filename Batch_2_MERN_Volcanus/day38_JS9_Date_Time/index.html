@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      h1 {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Time</h1>
+
+    <script>
+      setInterval(() => {
+        const date = new Date();
+
+        const currentDate = date.getDate();
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const hour = date.getHours();
+        const minute = date.getMinutes();
+        const second = date.getSeconds();
+
+        console.log(`Today date is = ${currentDate}-${month}-${year}`);
+        console.log(`Today time is = ${hour}:${minute}:${second}`);
+
+        const element = document.querySelector("h1");
+
+        // element.innerText = "This is a superman"
+
+        element.innerHTML = `${hour}:${minute}:${second}`;
+
+        console.log(element);
+      }, 1000);
+      
+    </script>
+  </body>
+</html>

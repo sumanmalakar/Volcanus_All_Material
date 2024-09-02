@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .nav_bar{
+            height: 10vh;
+            width: 100%;
+            /* background-color: yellowgreen; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .left,.middle,.right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: grey; */
+            padding-top: 1rem;
+            height: 2rem;
+        }
+        .middle{
+            display: block;
+        }
+        .middle h2{
+            display: none;
+            cursor: pointer;
+        }
+        .middle:hover h2{
+            cursor: pointer;
+            display: block;
+        }
+        .middle h2{
+            background-color: orangered;
+            height: 1rem;
+            width: 100%;
+            margin: 0.5rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <div class="left">
+            <div class="home">
+                <h1>Home</h1>
+            </div>
+        </div>
+        <div class="middle">
+            <h1>Product</h1>
+            <h2>smartphone</h2>
+            <h2>tablets</h2>
+            <h2>laptops</h2>
+            <h2>cameras</h2>
+        </div>
+        <div class="right">
+            <div class="contact">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Data</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fetch"></div>
+
+    <script>
+      // const fetchData = async () =>{
+      //   const api = await fetch('https://jsonplaceholder.typicode.com/todos')
+      //   const data = await api.json()
+      //   console.log("This data is coming from My API ",data)
+      // }
+      // fetchData()
+
+      const fetchDataUsingPromise = () => {
+        return new Promise((resolve, reject) => {
+          fetch("https://jsonplaceholder.typicodeusers")
+            .then((res) => {
+              if (!res.ok) {
+                reject("The error Occure");
+              }
+              resolve(res.json());
+            })
+            .catch((err) => {
+              reject("The error Occure");
+            });
+        });
+      };
+
+      fetchDataUsingPromise()
+        .then((data) =>
+          console.log("This data is coming from my Promise", data)
+        )
+        .catch((err) => console.log(err));
+    </script>
+  </body>
+</html>

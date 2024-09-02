@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+       .nav-parent {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+
+      }
+      .nav-bar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blueviolet;
+        padding: 20px;
+      }
+      .main_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 300px;
+        width: 300px;
+        
+        /* background-color: yellow; */
+      }
+      .main_img img {
+        height: 300px;
+        width: 300px;
+        border-radius: 5%;
+        /* z-index: -1; */
+        
+      }
+      .inside_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        
+      }
+      .inside_img img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 2px solid yellow;
+        
+      }
+      .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(https://cdn.pixabay.com/photo/2023/12/05/08/23/port-8431044_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: center;
+        background-attachment: fixed;
+        
+      }
+      .section2 {
+        height: 100vh;
+        position: relative;
+        background-color: rgb(164, 164, 194);
+        z-index: -1;
+      }
+      .box {
+        height: 120px;
+        width: 130px;
+        background-color: yellow;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+      .section3 {
+        height: 100vh;
+      }
+     
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+     <div class="nav-parent">
+        <div class="nav-bar">
+          <a href="#about" class="items">Home</a>
+          <a href="#contact" class="items">About</a>
+          <a href="#team" class="items">Teams</a>
+          <div class="items">Contact</div>
+        </div>
+      </div>
+    <section class="section1" id="about">
+      <div class="main_img">
+        <img
+          src="https://cdn.pixabay.com/photo/2023/11/21/21/36/mountains-8404275_1280.jpg"
+          alt=""
+        />
+        <div class="inside_img">
+          <img
+            src="https://cdn.pixabay.com/photo/2023/11/25/04/45/mountains-8411045_1280.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section2" id="team">
+      <div class="box"></div>
+     
+    </section>
+    
+    <div class="section3" id="contact"></div>
+  </body>
+</html>

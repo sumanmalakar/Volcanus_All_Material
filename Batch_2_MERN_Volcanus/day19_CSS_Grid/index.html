@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .grid-container {
+        background-color: rgb(99, 9, 99);
+        display: grid;
+        /* justify-content: space-evenly; */
+        grid-template-columns: 100px 100px 100px;
+        /* gap: 1rem; */
+        /* grid-gap: 1rem; */
+        /* row-gap: 1rem;
+        column-gap: 4rem; */
+        padding: 10px;
+      }
+      .item-list {
+        /* height: 50px;
+        width: 100px; */
+        background-color: yellow;
+        margin: 5px;
+        /* padding: 2rem; */
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        padding: 20px 10px 20px;
+      }
+      .item-list:nth-child(1) {
+        background-color: blue;
+        /* grid-column-start: 1;
+        grid-column-end: 5; */
+        grid-column: 1/5;
+      }
+      .item-list:nth-child(4) {
+        background-color: brown;
+        /* grid-row-start: 2;
+        grid-row-end: 4; */
+        grid-row: 2/4;
+      }
+      .item-list:nth-child(9) {
+        background-color: cadetblue;
+        /* grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 4; */
+        grid-column: 1 / span 4;
+        grid-row: 4/ 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item-list">1</div>
+      <div class="item-list">2</div>
+      <div class="item-list">3</div>
+      <div class="item-list">4</div>
+      <div class="item-list">5</div>
+      <div class="item-list">6</div>
+      <div class="item-list">7</div>
+      <div class="item-list">8</div>
+      <div class="item-list">9</div>
+      <div class="item-list">10</div>
+      <div class="item-list">11</div>
+      <div class="item-list">12</div>
+      <div class="item-list">13</div>
+      <div class="item-list">14</div>
+      <div class="item-list">15</div>
+    </div>
+  </body>
+</html>

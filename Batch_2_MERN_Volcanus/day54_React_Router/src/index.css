@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.nav .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .right .items {
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav .right .items:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: rgb(6, 11, 27);
+  padding: 3px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

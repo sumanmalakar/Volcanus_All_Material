@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - [Document Object Model]</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      /* h1{
+            background-color: yellow;
+        } */
+      img {
+        border: 2px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>DOM Intro..</h1> -->
+    <!-- 
+    <div class="container">
+        <h1>This is h1 tag</h1>
+        <h1>This is h2</h1>
+        <h1>This is another heading tag</h1>
+    <p>Lorem ipsum dolor sit amet, </p>
+        <h2 id="h2">this is h2</h2>
+        <h3 class="h3">This is h3</h3>
+    </div> -->
+
+    <h1>This h1</h1>
+    <h1>th</h1>
+
+    <div class="container"></div>
+
+    <img
+      onmouseover="imgChange()"
+      onmouseleave="imgOriginal()"
+      src="https://cdn.pixabay.com/photo/2020/03/12/07/55/city-4924252_640.jpg"
+      alt=""
+    />
+
+    <button onclick="bgDark()">Dark</button>
+    <button onclick="bgLight()">Light</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
