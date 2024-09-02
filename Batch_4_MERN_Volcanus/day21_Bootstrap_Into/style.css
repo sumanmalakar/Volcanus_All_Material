@@ -1,0 +1,31 @@
+   .b {
+       background-color: blueviolet;
+       color: white;
+       /* border: none; */
+       border-radius: 2px;
+       border: 1px solid yellow;
+       font-weight: bold;
+       padding: 5px;
+   }
+
+   .flex {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .btn-primary {
+       background-color: blueviolet;
+       color: white;
+       border:none;
+       padding: 10px;
+       border-radius: 4px;
+   }
+
+   .btn-warning {
+       background-color: yellow;
+       color: black;
+       border:none;
+       padding: 10px;
+       border-radius: 4px;
+   }

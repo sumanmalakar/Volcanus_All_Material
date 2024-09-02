@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation-name: spiderman;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes superman {
+            to {
+                background-color: blueviolet;
+                height: 100px;
+                width: 100px;
+            }
+
+            from {
+                background-color: rgb(22, 160, 33);
+                /* height: 200px;
+                width: 300px; */
+                border: 2px solid blue;
+                /* transform: translate(50px,100px); */
+                top: 200px;
+
+            }
+        }
+
+        @keyframes spiderman {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                left: 300px;
+                top: 350px;
+            }
+
+            75% {
+                left: 0px;
+                top: 350px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stiky</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .left {
+            height: 90vh;
+            background-color: blue;
+            width: 20%;
+            position: sticky;
+            top: 20px;
+        }
+
+        .right {
+            height: 90vh;
+            background-color: blue;
+            width: 20%;
+            position: sticky;
+            top: 20px;
+        }
+
+        .post_section {
+            background-color: rgb(36, 58, 21);
+            width: 50%;
+            /* min-height: 200vh; */
+            max-height: 100vh;
+            overflow-x: scroll;
+        }
+        .post_section::-webkit-scrollbar{
+            display: none;
+        }
+        .post{
+            background-color: burlywood;
+            height: 50vh;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="post_section">
+            <div class="post"></div> 
+            <div class="post"></div> 
+            <div class="post"></div> 
+            <div class="post"></div> 
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

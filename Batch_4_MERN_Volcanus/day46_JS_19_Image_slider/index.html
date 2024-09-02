@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        img {
+            border-radius: 10px;
+            border: 2px solid yellow;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&h=350"
+            alt="" 
+            onmouseover="changeImg()" onmouseleave="originalImage()"
+            >
+        <h1>Nature image</h1>
+
+        <button onclick="changeDark()">Change To Dark</button>
+
+        <button onclick="changeLight()">Change To Light</button>
+    </div>
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="./Event.js"></script>
+</body>
+
+</html>

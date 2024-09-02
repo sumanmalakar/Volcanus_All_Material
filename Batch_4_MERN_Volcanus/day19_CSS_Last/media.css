@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+
+    .box {
+        background-color: white;
+        color: black;
+    }
+
+    .d-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .d-none {
+        display: block;
+    }
+
+    
+}

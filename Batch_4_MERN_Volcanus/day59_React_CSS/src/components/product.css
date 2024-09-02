@@ -1,0 +1,11 @@
+.product {
+    background-color: rgb(6, 8, 42);
+    text-align: center;
+    padding: 10px;
+}
+
+.product img {
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+}

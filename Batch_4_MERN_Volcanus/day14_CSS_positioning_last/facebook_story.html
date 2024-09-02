@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>story</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .parent {
+        position: relative;
+        /* background-color: yellow; */
+        width: 300px;
+      }
+      .parent img {
+        width: 300px;
+      }
+      .child {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+      .child img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 2px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <img
+        src="https://images.pexels.com/photos/2168975/pexels-photo-2168975.jpeg?auto=compress&cs=tinysrgb&h=350"
+        alt=""
+      />
+      <div class="child">
+        <img
+          src="https://images.pexels.com/photos/887849/pexels-photo-887849.jpeg?auto=compress&cs=tinysrgb&h=350"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
