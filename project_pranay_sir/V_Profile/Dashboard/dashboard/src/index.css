@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  background-color: white;
+  color: black;
+}
+.active {
+  background-color: rgb(255,152,0);
+  /* color: white; */
+  border-left: 6px solid black;
+}
+
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root{
+ font-weight: bold !important;
+}
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input{
+   font-weight: 600 !important;
+   /* font-size: large !important ; */
+   color: rgba(0, 0, 0, 0.6) !important;
+
+}
+
